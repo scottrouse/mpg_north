@@ -45,7 +45,7 @@ html {
 body {
   font-family: $sans-serif-small; // Set from _custom.scss font variables
   font-size: 87.5%;
-  color: #43423F;
+  color: $dark-gray;
 }
 
 
@@ -517,6 +517,7 @@ ul.links {
 
 a {
   text-decoration: none;
+  color: $dark-gray;
 
   &:link,
   &:visited {}
@@ -544,13 +545,13 @@ a {
  */
 
 #primary-menu-bar {
-  background-color: #57534C;
+  background-color: $dark-gray;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 #primary-menu-bar li {
-  border-right: 1px solid #D5CEC4;
+  border-right: 1px solid $border;
   margin: 5px 0;
 }
 
@@ -559,7 +560,7 @@ a {
 }
 
 #primary-menu-bar li a {
-  color: #D5CEC4;
+  color: $light-on-dark;
 }
 
 .nav {
@@ -1971,7 +1972,7 @@ tr.error {
 
 .view-front-page-posts .views-field-type {
   float: left;
-  background-color: #E39809;
+  background-color: $highlight;
   color: #FFFFFF;
   padding: 0.2em 0.4em;
   font-size: 1.2em;
