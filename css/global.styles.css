@@ -1322,16 +1322,47 @@ div.messages ul {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032016}}
-.front-page-feature h2.block-title {
-  background: #e09836;
+/*
+ * Front Page Feature Blocks/Beans
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032020}}
+#mini-panel-front_page_four_column {
+  background: #c6c5c3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032023}}
+#mini-panel-front_page_four_column .front-page-feature {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  background: #57554f;
   color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032030}}
+#mini-panel-front_page_four_column .front-page-feature .block-inner {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032033}}
+#mini-panel-front_page_four_column .front-page-feature .block-inner h2.block-title {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  background-color: #e09836;
+  -webkit-box-shadow: #e7af62 0 1px 0, inset #c57e1e 0 1px 0;
+  -moz-box-shadow: #e7af62 0 1px 0, inset #c57e1e 0 1px 0;
+  box-shadow: #e7af62 0 1px 0, inset #c57e1e 0 1px 0;
+  font-size: 1.2em;
+  padding: 0.25em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032044}}
+#mini-panel-front_page_four_column .front-page-feature .node-webform {
+  margin-top: 45px;
+  padding: 10px;
 }
 
 /*
  * Misc Node Styling
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032027}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032055}}
 .box-right {
   float: right;
   border: 1px solid #43423F;
@@ -1340,7 +1371,7 @@ div.messages ul {
   max-width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032063}}
 .box-right h3 {
   margin-top: 0;
 }

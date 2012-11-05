@@ -2011,14 +2011,42 @@ tr.error {
 }
 
 
-.front-page-feature {
 
-  h2.block-title {
-    background: $highlight;
+
+/*
+ * Front Page Feature Blocks/Beans
+ */
+
+#mini-panel-front_page_four_column {
+  background: $light-gray;
+
+  .front-page-feature {
+    position: relative;
+    margin: $gutter-width;
+    overflow: hidden;
+    background: $dark-gray;
     color: $page;
+    
+    .block-inner {
+      margin: 0;
+  
+      h2.block-title {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background-color: $highlight;
+        @include box-shadow(lighten($highlight, 10%) 0 1px 0, inset darken($highlight, 10%) 0 1px 0);
+        font-size: 1.2em;
+        padding: 0.25em;
+      }
+    }
+    
+    .node-webform {
+      margin-top: 45px;
+      padding: 10px;
+    }
   }
 }
-
 
 /*
  * Misc Node Styling
