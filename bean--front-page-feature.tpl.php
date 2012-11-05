@@ -30,6 +30,6 @@
 
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
-    <a href="<?php print $bean->field_block_link['und'][0]['display_url']; ?>"><?php print render($content['field_block_image']); ?></a>
+    <a href="<?php print $bean->field_block_link['und'][0]['display_url']; ?>" title="<?php print $bean->field_block_link['und'][0]['attributes']['title']; ?>"><?php print render($content['field_block_image']); ?></a>
   </div>
 </div>
