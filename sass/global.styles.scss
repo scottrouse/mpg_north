@@ -1973,18 +1973,12 @@ tr.error {
 .view-front-page-posts .views-field-type {
   float: left;
   background-color: $highlight;
-  color: #FFFFFF;
+  color: $page;
   padding: 0.2em 0.4em;
   font-size: 1.2em;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  @include single-box-shadow();
+  @include border-corner-radius(top, right);
+  @include border-corner-radius(bottom, left);
   margin-right: 1em;
 }
 
@@ -2014,6 +2008,15 @@ tr.error {
 
 #node-245 h1.node-title {
   display: none;
+}
+
+
+.front-page-feature {
+
+  h2.block-title {
+    background: $highlight;
+    color: $page;
+  }
 }
 
 

@@ -77,6 +77,23 @@ $gutter-width: 10px;
 
 
 //
+// Box Shadows
+// http://compass-style.org/reference/compass/css3/box_shadow/
+//
+$default-box-shadow-color:      rgba(0,0,0,0.4);
+$default-box-shadow-h-offset:   2px;
+$default-box-shadow-v-offset:   2px;
+$default-box-shadow-blur:       5px;
+
+
+//
+// Border Radius
+// http://compass-style.org/reference/compass/css3/border_radius/
+//
+$default-border-radius:         3px;
+
+
+//
 // Markup free clearing
 // http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css/
 //
