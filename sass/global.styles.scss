@@ -1962,29 +1962,38 @@ tr.error {
  * Front Page
  */
 
-.view-front-page-posts .views-row {
-  border-bottom: 1px dashed #43423F;
+.view-front-page-posts {
+  
+  .views-row {
+    border-bottom: 1px dashed #43423F;
+    
+    .views-field-type {
+      float: left;
+      background-color: $highlight;
+      color: $page;
+      padding: 0.2em 0.4em;
+      font-size: 1.2em;
+      @include single-box-shadow();
+      @include border-corner-radius(top, right);
+      @include border-corner-radius(bottom, left);
+      margin-right: 1em;
+    }
+    
+    .views-field-title {
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+    
+  }
+  
+  .views-row-last {
+    border-bottom: none;
+  }
 }
 
-.view-front-page-posts .views-row-last {
-  border-bottom: none;
-}
 
-.view-front-page-posts .views-field-type {
-  float: left;
-  background-color: $highlight;
-  color: $page;
-  padding: 0.2em 0.4em;
-  font-size: 1.2em;
-  @include single-box-shadow();
-  @include border-corner-radius(top, right);
-  @include border-corner-radius(bottom, left);
-  margin-right: 1em;
-}
 
-.view-front-page-posts .views-field-title h3 {
-  margin-bottom: 0;
-}
 
 
 #block-block-1 .block-title {
