@@ -2,6 +2,23 @@
 // _base.scss imports _custom.scss (variables and mixins) and other partials.
 @import "base";
 
+
+@import "font-awesome.scss";
+
+/*
+$fontAwesomePath: "../fonts/fontawesome/fontawesome-webfont" !default;
+
+@include font-face(
+    'FontAwesome',
+    font-files(
+        "../fonts/fontawesome/fontawesome-webfont.woff", woff,
+        "../fonts/fontawesome/fontawesome-webfont.ttf", truetype,
+        "../fonts/fontawesome/fontawesome-webfont.svg#FontAwesomeRegular", svg),
+    '../fonts/fontawesome/fontawesome-webfont.eot',
+    normal,
+    normal);
+*/
+
 /*
  * @file
  * global.styles
@@ -2187,7 +2204,12 @@ tr.error {
           color: green;
           
           &:before {
-            content: "(expand icon)";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            text-decoration: inherit;
+            content: "\f055";
           }
         }
       }
@@ -2197,7 +2219,12 @@ tr.error {
         &>a {
           
           &:before {
-            content: "(go icon)";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            text-decoration: inherit;
+            content: "\f0a9";
           }
         }
       }
