@@ -39,7 +39,9 @@
  */
 
 html {
-  background: $page;
+  background: lighten($dark-gray, 50%);
+  @include background(linear-gradient(top, $dark-gray, $light-gray));
+  background-attachment: fixed;
 }
 
 body {
@@ -142,6 +144,10 @@ var {
   font-family: $mono;
 }
 
+iframe {
+  border: none;
+}
+
 
 /* =============================================================================
  *   Wrappers
@@ -152,6 +158,9 @@ var {
  * Main wrapper in page.tpl.php, the .container class sets the width of the page, do not add width to it!
  */
 #page  {
+  background: $white;
+  margin-top: 2em;
+  margin-bottom: 2em;
   .container {}
 }
 
@@ -502,7 +511,26 @@ ul.links {
 /*
  * Tertiary content
  */
-.region-tertiary-content {}
+.region-tertiary-content {
+  background: $light-gray;
+  
+  .block-nodeblock {
+    margin-bottom: 0;
+  
+    .node {
+      margin-bottom: 0;
+    }
+    
+    .field-name-title {
+      border-right: 1px solid $dark-gray;
+      margin-right: 20px;
+      
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+}
 
 
 /*
@@ -548,6 +576,7 @@ a {
   background-color: $dark-gray;
   text-transform: uppercase;
   font-weight: bold;
+  @include inset($dark-gray);
 }
 
 #primary-menu-bar li {
@@ -1423,7 +1452,9 @@ ul.action-links {
 /*
  * "Main page content" block
  */
-#block-system-main {}
+#block-system-main {
+  margin-bottom: 0;
+}
 
 
 /*
@@ -1970,22 +2001,38 @@ tr.error {
     .views-field-type {
       float: left;
       background-color: $highlight;
-      color: $page;
+      color: $white;
       padding: 0.2em 0.4em;
-      font-size: 1.2em;
+      /* font-size: 1.2em; */
       @include single-box-shadow();
       @include border-corner-radius(top, right);
       @include border-corner-radius(bottom, left);
       margin-right: 1em;
+      text-transform: uppercase;
+      font-weight: bold;
     }
     
     .views-field-php {
       float: right;
+      
+      a {
+        color: $highlight;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
     }
     
     .views-field-title {
       h3 {
         margin-bottom: 0;
+      }
+    }
+    
+    .views-field-body {
+      
+      p {
+        margin-left: 1em;
+        margin-right: 1em;
       }
     }
     
@@ -2030,6 +2077,10 @@ tr.error {
  * Front Page Feature Blocks/Beans
  */
 
+.pane-front-page-four-column {
+  margin-bottom: 0;
+}
+
 #mini-panel-front_page_four_column {
   background: $light-gray;
 
@@ -2048,9 +2099,10 @@ tr.error {
         top: 10px;
         width: 100%;
         background-color: $highlight;
-        @include box-shadow(lighten($highlight, 10%) 0 1px 0, inset darken($highlight, 10%) 0 1px 0);
+        @include inset ($highlight);
         font-size: 1.2em;
         padding: 0.25em;
+        @include opacity(0.9);
       }
     }
     
@@ -2075,4 +2127,80 @@ tr.error {
 
 .box-right h3 {
   margin-top: 0;
+}
+
+
+
+
+
+
+
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 43%;
+  padding-top: 30px; /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+#block-menu-block-2 {
+
+  ul {
+    margin: 0;
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    li {
+      padding: 0;
+      list-style: none;
+      
+      a {
+        display: block;
+        background: #ccc;
+        border-top: 1px solid black;
+        padding: 1em;
+        
+        &:hover {
+          text-decoration: none;
+        }
+        
+        &:before {
+          content: "(go icon)";
+        }
+      }
+      
+      &.collapsed {
+        
+        &>a {
+          color: green;
+          
+          &:before {
+            content: "(expand icon)";
+          }
+        }
+      }
+      
+      &.expanded {
+        
+        &>a {
+          
+          &:before {
+            content: "(go icon)";
+          }
+        }
+      }
+    }
+  }
 }

@@ -24,6 +24,7 @@
 //
 
 $page:         #fff;    // to match the page background, default is white
+$white:        #FFF;
 $border:       #D5CEC4;    // all borders set in global.styles - tables, fieldset, primary links
 $highlight:    #E09836;    // required mark, form error highlight, "new" label on comments
 $ultralight:   #f5f5f5; // table row even, primary link inactive tabs
@@ -81,9 +82,9 @@ $gutter-width: 10px;
 // http://compass-style.org/reference/compass/css3/box_shadow/
 //
 $default-box-shadow-color:      rgba(0,0,0,0.4);
-$default-box-shadow-h-offset:   2px;
-$default-box-shadow-v-offset:   2px;
-$default-box-shadow-blur:       5px;
+$default-box-shadow-h-offset:   1px;
+$default-box-shadow-v-offset:   1px;
+$default-box-shadow-blur:       2px;
 
 
 //
@@ -92,6 +93,16 @@ $default-box-shadow-blur:       5px;
 //
 $default-border-radius:         3px;
 
+
+//
+// Letterpress/Inset Look
+// Adds a darker border to the top of an element and a lighter border to 
+// the bottom giving the appearance of an inset or letterpress effect.
+//
+
+@mixin inset($color) {
+  @include box-shadow(lighten($color, 10%) 0 1px 0, inset darken($color, 10%) 0 1px 0);
+}
 
 //
 // Markup free clearing
