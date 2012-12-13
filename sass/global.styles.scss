@@ -469,7 +469,13 @@ ul.links {
 /*
  * Regions have an inner div - perfect for adding margin, padding or borders
  */
-.region-inner {}
+.region-inner {
+  padding: 0 1em;
+}
+
+.front .region-inner {
+  padding: 0;
+}
 
 
 /*
@@ -2052,9 +2058,12 @@ tr.error {
     
     .views-field-body {
       
-      p {
-        margin-left: 1em;
-        margin-right: 1em;
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-bottom: 1em;
+      
+      p:last-child {
+        margin-bottom: 0;
       }
     }
     
@@ -2235,5 +2244,24 @@ tr.error {
         }
       }
     }
+  }
+}
+
+
+
+
+.flex-nav-container {
+  
+  .flexslider {
+    background: none;
+    border: none;
+    @include border-radius(0);
+  }
+}
+
+.pane-bean-front-page-slideshow {
+  
+  .block-inner {
+    margin: 0;
   }
 }
