@@ -23,8 +23,8 @@
     */
 @font-face {
   font-family: "FontAwesome";
-  src: url('/fontawesome/fontawesome-webfont.eot');
-  src: url('/fontawesome/fontawesome-webfont.eot?#iefix') format('eot'), url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('eot'), url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2210,17 +2210,21 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031685}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031683}}
+.form-item input {
+  max-width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031689}}
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #e09836;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031689}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031693}}
 .form-item label {
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031696}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031700}}
 .form-item .description {
   font-size: 0.85em;
 }
@@ -2228,7 +2232,7 @@ ul.action-links {
 /*
  * Highlight marks and form required mark
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031710}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031714}}
 .marker,
 .form-required {
   color: #e09836;
@@ -2237,7 +2241,7 @@ ul.action-links {
 /*
  * The submit button
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031724}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031728}}
 .container-inline div,
 .container-inline label {
   display: inline;
@@ -2246,7 +2250,7 @@ ul.action-links {
 /*
  * Define consistent borders
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031732}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031736}}
 fieldset {
   border: 1px solid #d5cec4;
 }
@@ -2257,7 +2261,7 @@ fieldset {
 /*
  * Buttons used by contrib modules like Media
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031746}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031750}}
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -2267,7 +2271,7 @@ a.button {
 /*
  * Password confirmation
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031755}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031759}}
 .password-parent,
 .confirm-parent {
   margin: 0;
@@ -2276,18 +2280,18 @@ a.button {
 /* =============================================================================
  *   Tables
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031764}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031768}}
 table {
   margin: 10px 0;
   padding: 0;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031769}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031773}}
 table.sticky-header {
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031780}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031784}}
 table,
 thead,
 tbody,
@@ -2297,27 +2301,27 @@ td {
   border-color: #d5cec4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031787}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031791}}
 table,
 td,
 th {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031794}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031798}}
 caption,
 th,
 td {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031799}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031803}}
 thead tr {
   font-weight: 700;
   background-color: #e5e5e5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031806}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031810}}
 td,
 th {
   border-bottom: 0;
@@ -2325,29 +2329,29 @@ th {
   padding: 5px 7px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031816}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031820}}
 tbody tr {
   border-top: 1px solid #d5cec4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031821}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031825}}
 tr {
   /* Table row striping */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031823}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031827}}
 tr.odd {
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031830}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031834}}
 tr.info, tr.even, tr:nth-child(2n+2) {
   border-bottom: 0;
   background-color: whitesmoke;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031839}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031843}}
 tr.odd td.active {
   background-color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031843}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031847}}
 tr.even td.active {
   background-color: #ebebeb;
 }
@@ -2356,7 +2360,7 @@ tr.even td.active {
  * Forum tables
  * Core sets white-space to nowrap, which makes no sense
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031871}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031875}}
 #forum td .created,
 #forum td .posts,
 #forum td .topics,
@@ -2369,12 +2373,12 @@ tr.even td.active {
 /* =============================================================================
  *   Messages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031882}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031886}}
 div.messages {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031887}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031891}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -2383,7 +2387,7 @@ div.messages ul {
 /*
  * Unpublished nodes
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031932}}
 .node-unpublished p.unpublished,
 .comment-unpublished p.unpublished {
   color: pink;
@@ -2409,28 +2413,28 @@ div.messages ul {
 /* =============================================================================
  *    Maintenance pages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031939}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031943}}
 .maintenance-page .container {
   padding: 40px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031944}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031948}}
 .maintenance-page #site-name,
 .maintenance-page #page-title {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031951}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031955}}
 .db-offline .container {
   margin: 0 auto;
   padding: 40px 0;
   width: 100%;
   max-width: 960px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031958}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031962}}
 .db-offline div.messages {
   margin: 20px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031962}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031966}}
 .db-offline #content {
   padding: 20px 0;
 }
@@ -2441,7 +2445,7 @@ div.messages ul {
 /*
  * Admin menu overrides
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031975}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031979}}
 #admin-menu {
   margin: 0;
   padding: 0;
@@ -2450,7 +2454,7 @@ div.messages ul {
 /*
  * Devel Module
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031984}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031988}}
 .dev-query {
   background: #eeeeee;
   padding: 30px;
@@ -2459,11 +2463,11 @@ div.messages ul {
 /*
  * Styleguide module tweaks
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031993}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031997}}
 #styleguide-header {
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000031996}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032000}}
 #styleguide-header .item-list {
   font-family: inherit;
   margin: 0 20px 20px 0;
@@ -2477,11 +2481,11 @@ div.messages ul {
 /*
  * Front Page
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032015}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032019}}
 .view-front-page-posts .views-row {
   border-bottom: 1px dashed #43423F;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032018}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032022}}
 .view-front-page-posts .views-row .views-field-type {
   float: left;
   background-color: #e09836;
@@ -2501,48 +2505,48 @@ div.messages ul {
   text-transform: uppercase;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032032}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032036}}
 .view-front-page-posts .views-row .views-field-php {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032039}}
 .view-front-page-posts .views-row .views-field-php a {
   color: #e09836;
   text-transform: uppercase;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032043}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032047}}
 .view-front-page-posts .views-row .views-field-title h3 {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032050}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032054}}
 .view-front-page-posts .views-row .views-field-body p {
   margin-left: 1em;
   margin-right: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032058}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032062}}
 .view-front-page-posts .views-row-last {
   border-bottom: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032067}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032071}}
 #block-block-1 .block-title {
   float: left;
   width: 25%;
   line-height: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032078}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032082}}
 .views-slideshow-cycle-main-frame, views-slideshow-cycle-main-frame * {
   max-width: 100% !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032082}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032086}}
 .pane-front-page-gallery-panel-pane-1 .block-inner {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032086}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032090}}
 #node-245 h1.node-title {
   display: none;
 }
@@ -2550,29 +2554,30 @@ div.messages ul {
 /*
  * Front Page Feature Blocks/Beans
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032097}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032101}}
 .pane-front-page-four-column {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032105}}
 #mini-panel-front_page_four_column {
   background: #c6c5c3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032104}}
-#mini-panel-front_page_four_column .front-page-feature {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032109}}
+.front-page-feature, .block-bean {
   position: relative;
   margin: 10px;
   overflow: hidden;
   background: #57554f;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032111}}
-#mini-panel-front_page_four_column .front-page-feature .block-inner {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032116}}
+.front-page-feature .block-inner, .block-bean .block-inner {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032114}}
-#mini-panel-front_page_four_column .front-page-feature .block-inner h2.block-title {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032119}}
+.front-page-feature .block-inner h2.block-title, .block-bean .block-inner h2.block-title {
   position: absolute;
   top: 10px;
   width: 100%;
@@ -2585,8 +2590,8 @@ div.messages ul {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032126}}
-#mini-panel-front_page_four_column .front-page-feature .node-webform {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032131}}
+.front-page-feature .node-webform, .block-bean .node-webform {
   margin-top: 45px;
   padding: 10px;
 }
@@ -2594,7 +2599,7 @@ div.messages ul {
 /*
  * Misc Node Styling
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032142}}
 .box-right {
   float: right;
   border: 1px solid #43423F;
@@ -2603,12 +2608,12 @@ div.messages ul {
   max-width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032150}}
 .box-right h3 {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032161}}
 .iframe-container {
   position: relative;
   padding-bottom: 43%;
@@ -2617,7 +2622,7 @@ div.messages ul {
   height: 0;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032168}}
 .iframe-container iframe {
   position: absolute;
   top: 0;
@@ -2626,39 +2631,33 @@ div.messages ul {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032180}}
 #block-menu-block-2 ul {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032183}}
 #block-menu-block-2 ul:first-child {
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032187}}
 #block-menu-block-2 ul li {
   padding: 0;
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032191}}
 #block-menu-block-2 ul li a {
   display: block;
   background: #ccc;
   border-top: 1px solid black;
-  padding: 1em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032192}}
-#block-menu-block-2 ul li a:hover {
+  padding: 0.5em 1em;
   text-decoration: none;
+  font-size: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032196}}
-#block-menu-block-2 ul li a:before {
-  content: "(go icon)";
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032202}}
 #block-menu-block-2 ul li.collapsed > a {
   color: green;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032205}}
 #block-menu-block-2 ul li.collapsed > a:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -2666,13 +2665,19 @@ div.messages ul {
   display: inline-block;
   text-decoration: inherit;
   content: "\f055";
+  padding-right: 0.5em;
+  vertical-align: middle;
+  font-size: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032221}}
-#block-menu-block-2 ul li.expanded > a:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/srv\/www\/mpgnorth\.deckdev\.com\/drupal-7\.17\/sites\/all\/themes\/mpg_north\/sass\/global\.styles\.scss}line{font-family:\000032223}}
+#block-menu-block-2 ul li > a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
   text-decoration: inherit;
   content: "\f0a9";
+  padding-right: 0.5em;
+  vertical-align: middle;
+  font-size: 1.5em;
 }

@@ -1679,7 +1679,11 @@ ul.action-links {
  * Wrapper for a form element (or group of form elements) and its label
  */
 .form-item { 
-
+  
+  input {
+    max-width: 100%;
+  }
+  
   input.error,
   textarea.error,
   select.error {
@@ -2100,35 +2104,36 @@ tr.error {
 
 #mini-panel-front_page_four_column {
   background: $light-gray;
+}
 
-  .front-page-feature {
-    position: relative;
-    margin: $gutter-width;
-    overflow: hidden;
-    background: $dark-gray;
-    color: $page;
-    
-    .block-inner {
-      margin: 0;
+.front-page-feature, .block-bean {
+  position: relative;
+  margin: $gutter-width;
+  overflow: hidden;
+  background: $dark-gray;
+  color: $page;
   
-      h2.block-title {
-        position: absolute;
-        top: 10px;
-        width: 100%;
-        background-color: $highlight;
-        @include inset ($highlight);
-        font-size: 1.2em;
-        padding: 0.25em;
-        @include opacity(0.9);
-      }
-    }
-    
-    .node-webform {
-      margin-top: 45px;
-      padding: 10px;
+  .block-inner {
+    margin: 0;
+
+    h2.block-title {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      background-color: $highlight;
+      @include inset ($highlight);
+      font-size: 1.2em;
+      padding: 0.25em;
+      @include opacity(0.9);
     }
   }
+  
+  .node-webform {
+    margin-top: 45px;
+    padding: 10px;
+  }
 }
+
 
 /*
  * Misc Node Styling
@@ -2187,15 +2192,9 @@ tr.error {
         display: block;
         background: #ccc;
         border-top: 1px solid black;
-        padding: 1em;
-        
-        &:hover {
-          text-decoration: none;
-        }
-        
-        &:before {
-          content: "(go icon)";
-        }
+        padding: 0.5em 1em;
+        text-decoration: none;
+        font-size: 1.2em;
       }
       
       &.collapsed {
@@ -2210,11 +2209,14 @@ tr.error {
             display: inline-block;
             text-decoration: inherit;
             content: "\f055";
+            padding-right: 0.5em;
+            vertical-align: middle;
+            font-size: 1.5em;
           }
         }
       }
       
-      &.expanded {
+      & {
         
         &>a {
           
@@ -2225,6 +2227,9 @@ tr.error {
             display: inline-block;
             text-decoration: inherit;
             content: "\f0a9";
+            padding-right: 0.5em;
+            vertical-align: middle;
+            font-size: 1.5em;
           }
         }
       }
