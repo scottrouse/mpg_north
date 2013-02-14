@@ -601,6 +601,7 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   @include inset($dark-gray);
+  margin-bottom: 0;
 }
 
 #primary-menu-bar li {
@@ -2263,5 +2264,20 @@ tr.error {
   
   .block-inner {
     margin: 0;
+  }
+}
+
+
+.region-secondary-content {
+  .region-inner {
+    padding: 0;
+  }
+}
+
+#block-bean-header-images {
+  margin: 0;
+  
+  img {
+    width: 100%;
   }
 }
